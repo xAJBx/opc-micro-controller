@@ -45,7 +45,6 @@ void loop()
     //send anolog inputs over to MySql
     for (int i = 0; i < numAnalogs; i++)
     {
-      //Serial.println(analogRead(i));
       //initiate the query class instance
       MySQL_Cursor *cur_mem = new MySQL_Cursor(&conn);
       //save
