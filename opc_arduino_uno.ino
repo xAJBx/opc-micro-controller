@@ -25,11 +25,10 @@ void setup()
   // Trouble Shooting Serial
   Serial.begin(115200);
 
-  while (!Serial)
-    ; // wait for serial port to connect
+  while (!Serial); // wait for serial port to connect
   Ethernet.begin(mac_addr);
   Serial.println("Connecting...");
-  if (conn.connect(server_addr, 236472, user, password))
+  if (conn.connect(server_addr, 3306, user, password)) 
   {
     delay(1000);
   }
