@@ -1,7 +1,3 @@
-// AJB TODO:
-// -expose Front_Stats' data effeciently for each use case (upvote, downvote, visits)
-// -rethink data storage for Front_Stats ;;; make a single entry table that utilizes replace queryies rather than insert??? how to monitor growth rate then???
-
 const express = require("express");
 const cors = require("cors");
 const mysql = require("mysql");
