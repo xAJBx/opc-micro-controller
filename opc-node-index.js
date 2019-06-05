@@ -5,10 +5,9 @@ const mysql = require("mysql");
 const app = express();
 
 const SELECT_LASTEST_QUERY = "SELECT * FROM PLC_AI ORDER BY id DESC LIMIT 6";
-const SELECT_LASTEST_DOWNCOUNT_QUERY = "SELECT * FROM stats ORDER BY id DESC";
 
 const connection = mysql.createConnection({
-  host: "xxx.xxx.xxx.xxx", // server IP
+  host: "xxx.xxx.xxx.xxx", // enter in your applicable MySQL information
   user: "some user",
   password: "secret",
   database: "some database"
@@ -39,6 +38,6 @@ app.get("/AI", (req, res) => {
   });
 });
 
-app.listen(some port, "0.0.0.0", function() {
-  console.log("Listening to port: some port");
+app.listen(<some port>, "0.0.0.0", function() { // enter in your react front end port typiclly 80 on deployment
+  console.log("Listening to port: <some port>");
 });
